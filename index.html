@@ -5,14 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Email Template</title>
+
+  <style>
+    .mobile-only {
+      display: initial;
+    }
+
+    .desktop-only {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      .mobile-only {
+        display: none;
+      }
+
+      .desktop-only {
+        display: initial;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div style="
-        max-width: 800px;
-        margin: auto;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      ">
+  <div style="font-family: Verdana, Geneva, Tahoma, sans-serif">
     <!-- header -->
     <div style="background-color: #003058; padding: 4px 16px">
       <img src="./assets/logo.png" width="160" alt="logo">
@@ -32,13 +48,15 @@
         through the cites of the word in classical literature, discovered the
         undoubtable source.
       </p>
-      <table style="width: 100%">
+
+      <!-- content table for desktop version only -->
+      <table style="width: 100%;" class="desktop-only">
         <tr>
           <td style="
                 width: 50%;
                 font-weight: bold;
                 vertical-align: top;
-                padding: 4px;
+                padding: 4px 0;
               ">
             What is Lorem Ipsum?
           </td>
@@ -57,7 +75,7 @@
                 width: 50%;
                 font-weight: bold;
                 vertical-align: top;
-                padding: 4px;
+                padding: 4px 0;
               ">
             Why do we use it?
           </td>
@@ -75,7 +93,7 @@
                 width: 50%;
                 font-weight: bold;
                 vertical-align: top;
-                padding: 4px;
+                padding: 4px 0;
               ">
             Where does it come from?
           </td>
@@ -93,7 +111,7 @@
                 width: 50%;
                 font-weight: bold;
                 vertical-align: top;
-                padding: 4px;
+                padding: 4px 0;
               ">
             Where can I get some?
           </td>
@@ -111,7 +129,7 @@
                 width: 50%;
                 font-weight: bold;
                 vertical-align: top;
-                padding: 4px;
+                padding: 4px 0;
               ">
             1914 translation by H. Rackham
           </td>
@@ -129,7 +147,7 @@
                 width: 50%;
                 font-weight: bold;
                 vertical-align: top;
-                padding: 4px;
+                padding: 4px 0;
               ">
             Section 1.10.33 of
           </td>
@@ -147,7 +165,7 @@
                 width: 50%;
                 font-weight: bold;
                 vertical-align: top;
-                padding: 4px;
+                padding: 4px 0;
               ">
             What is Lorem Ipsum?
           </td>
@@ -165,7 +183,7 @@
                 width: 50%;
                 font-weight: bold;
                 vertical-align: top;
-                padding: 4px;
+                padding: 4px 0;
               ">
             What is Lorem Ipsum?
           </td>
@@ -175,6 +193,159 @@
                 color: #fb91ff;
                 padding-left: 4px;
               ">
+            Lorem Ipsum is simply dummy text of
+          </td>
+        </tr>
+      </table>
+
+      <!--content table for mobile version only -->
+      <table style="width: 100%" class="mobile-only">
+        <tr>
+          <td style="
+                font-weight: bold;
+                vertical-align: top;
+                padding: 4px;
+              ">
+            What is Lorem Ipsum?
+          </td>
+
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                color: #fb91ff;
+                padding-left: 4px;
+              ">
+            Lorem Ipsum is simply
+          </td>
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                vertical-align: top;
+                padding: 4px;
+              ">
+            Why do we use it?
+          </td>
+
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                color: #fb91ff;
+                padding-left: 4px;
+              ">
+            It is a long established
+          </td>
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                vertical-align: top;
+                padding: 4px;
+              ">
+            Where does it come from?
+          </td>
+
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                color: #fb91ff;
+                padding-left: 4px;
+              ">
+            Contrary to popular belief
+          </td>
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                vertical-align: top;
+                padding: 4px;
+              ">
+            Where can I get some?
+          </td>
+
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                color: #fb91ff;
+              ">
+            There are many variations
+          </td>
+        </tr>
+        <tr>
+          <td style="
+                width: 50%;
+                font-weight: bold;
+                vertical-align: top;
+                padding: 4px;
+              ">
+            1914 translation by H. Rackham
+          </td>
+
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                color: #fb91ff;
+              ">
+            Lorem Ipsum is simply dummy
+          </td>
+        </tr>
+        <tr>
+          <td style="
+                width: 50%;
+                font-weight: bold;
+                vertical-align: top;
+                padding: 4px;
+              ">
+            Section 1.10.33 of
+          </td>
+
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                color: #fb91ff;
+              ">
+            Contrary to popular belief
+          </td>
+        </tr>
+        <tr>
+          <td style="
+                width: 50%;
+                font-weight: bold;
+                vertical-align: top;
+                padding: 4px;
+              ">
+            What is Lorem Ipsum?
+          </td>
+        </tr>
+        <tr>
+          <td style="
+                font-weight: bold;
+                color: #fb91ff;
+              ">
+            Contrary to popular belief, Lorem Ipsum
+          </td>
+        </tr>
+        <tr>
+          <td style="
+                width: 50%;
+                font-weight: bold;
+                vertical-align: top;
+                padding: 4px;
+              ">
+            What is Lorem Ipsum?
+          </td>
+        </tr>
+        <tr>
+          <td style="
+          font-weight: bold;
+          color: #fb91ff;
+        ">
             Lorem Ipsum is simply dummy text of
           </td>
         </tr>
@@ -199,32 +370,70 @@
 
     <!-- footer -->
     <div style="background-color: #efefef; padding: 4px 16px; font-size: 14px">
-      <table style="width: 100%">
-        <tr>
-          <td><img src="./assets/logo.png" width="150" alt="logo"></td>
-          <td></td>
-          <td style="text-align: center; width: 30px">
-            <a href="https://www.facebook.com/" target="_blank">
-              <img src="./assets/facebook.png" width="24" alt="facebook logo">
-            </a>
-          </td>
-          <td style="text-align: center; width: 30px">
-            <a href="https://twitter.com/" target="_blank">
-              <img src="./assets/twitter.png" width="24" alt="twitter logo">
-            </a>
-          </td>
-          <td style="text-align: center; width: 30px">
-            <a href="https://www.instagram.com/" target="_blank">
-              <img src="./assets/instagram.png" width="24" alt="instagram logo">
-            </a>
-          </td>
-          <td style="text-align: center; width: 30px">
-            <a href="https://www.youtube.com/" target="_blank">
-              <img src="./assets/youtube.png" width="24" alt="youtube logo">
-            </a>
-          </td>
-        </tr>
-      </table>
+
+      <!-- social section for desktop version only -->
+      <div class="desktop-only">
+        <table style="width: 100%">
+          <tr>
+            <td><img src="./assets/logo.png" width="150" alt="logo"></td>
+
+            <td style="text-align: center; width: 30px">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="./assets/facebook.png" width="24" alt="facebook logo">
+              </a>
+            </td>
+            <td style="text-align: center; width: 30px">
+              <a href="https://twitter.com/" target="_blank">
+                <img src="./assets/twitter.png" width="24" alt="twitter logo">
+              </a>
+            </td>
+            <td style="text-align: center; width: 30px">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./assets/instagram.png" width="24" alt="instagram logo">
+              </a>
+            </td>
+            <td style="text-align: center; width: 30px">
+              <a href="https://www.youtube.com/" target="_blank">
+                <img src="./assets/youtube.png" width="24" alt="youtube logo">
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- social section for mobile version only -->
+      <div class="mobile-only">
+        <table style="width: 100%">
+          <tr>
+            <td colspan="8" style="text-align: center"><img src=" ./assets/logo.png" width="150" alt="logo"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td style="width: 30px;">
+              <a href=" https://www.facebook.com/" target="_blank">
+                <img src="./assets/facebook.png" width="24" alt="facebook logo">
+              </a>
+            </td>
+            <td style="text-align: center; width: 30px">
+              <a href="https://twitter.com/" target="_blank">
+                <img src="./assets/twitter.png" width="24" alt="twitter logo">
+              </a>
+            </td>
+            <td style="text-align: center; width: 30px">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./assets/instagram.png" width="24" alt="instagram logo">
+              </a>
+            </td>
+            <td style="text-align: center; width: 30px">
+              <a href="https://www.youtube.com/" target="_blank">
+                <img src="./assets/youtube.png" width="24" alt="youtube logo">
+              </a>
+            </td>
+            <td colspan="2"></td>
+          </tr>
+        </table>
+      </div>
       <p>
         Contrary to popular belief, Lorem Ipsum is not simply random text. It
         has roots in a piece of classical Latin literature from 45 BC, making
@@ -247,6 +456,7 @@
       </p>
     </div>
   </div>
+
 </body>
 
 </html>
