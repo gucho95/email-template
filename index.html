@@ -5,41 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Email Template</title>
-
-  <style>
-    .mobile-only {
-      display: initial;
-    }
-
-    .desktop-only {
-      display: none;
-    }
-
-    @media screen and (min-width: 768px) {
-      .mobile-only {
-        display: none;
-      }
-
-      .desktop-only {
-        display: initial;
-      }
-    }
-  </style>
 </head>
 
-<body>
-  <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;max-width: 700px;margin: auto;">
-    <!-- header -->
-    <div style="background-color: #003058; padding: 4px 16px">
-      <img src="./assets/logo.png" width="160" alt="logo">
-    </div>
+<body style="text-align: center;">
+  <table
+    style="font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left: auto;margin-right: auto;width: 700px;border-collapse: collapse;border-spacing: 0;table-layout: fixed;text-align:left;">
+    <!-- header row -->
+    <tr>
+      <td style="background-color: #003058; padding: 4px 16px" colspan="8">
+        <img src="https://i.postimg.cc/yxWHWVYt/logo.png" width="160" alt="logo">
+      </td>
+    </tr>
 
-    <!-- content -->
-    <div style="background-color: white; padding: 4px 16px">
-      <h1 style="color: #003058">
-        The standard Lorem Ipsum passage, used since the 1500s
-      </h1>
-      <p>
+    <!-- title row -->
+    <tr>
+      <td colspan="8" style="padding: 4px 16px">
+        <h1 style="color: #003058">
+          The standard Lorem Ipsum passage, used since the 1500s
+        </h1>
+      </td>
+    </tr>
+
+    <!-- description row -->
+    <tr>
+      <td colspan="8" style="padding: 4px 16px">
         Contrary to popular belief, Lorem Ipsum is not simply random text. It
         has roots in a piece of classical Latin literature from 45 BC, making
         it over 2000 years old. Richard McClintock, a Latin professor at
@@ -47,413 +36,222 @@
         Latin words, consectetur, from a Lorem Ipsum passage, and going
         through the cites of the word in classical literature, discovered the
         undoubtable source.
-      </p>
+      </td>
+    </tr>
 
-      <!-- content table for desktop version only -->
-      <table style="width: 100%;" class="desktop-only">
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0;
-              ">
-            What is Lorem Ipsum?
-          </td>
-
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                color: #fb91ff;
-                padding-left: 4px;
-              ">
-            Lorem Ipsum is simply
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0;
-              ">
-            Why do we use it?
-          </td>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                color: #fb91ff;
-                padding-left: 4px;
-              ">
-            It is a long established
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0;
-              ">
-            Where does it come from?
-          </td>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                color: #fb91ff;
-                padding-left: 4px;
-              ">
-            Contrary to popular belief
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0;
-              ">
-            Where can I get some?
-          </td>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                color: #fb91ff;
-                padding-left: 4px;
-              ">
-            There are many variations
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0;
-              ">
-            1914 translation by H. Rackham
-          </td>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                color: #fb91ff;
-                padding-left: 4px;
-              ">
-            Lorem Ipsum is simply dummy
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0;
-              ">
-            Section 1.10.33 of
-          </td>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                color: #fb91ff;
-                padding-left: 4px;
-              ">
-            Contrary to popular belief
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0;
-              ">
-            What is Lorem Ipsum?
-          </td>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                color: #fb91ff;
-                padding-left: 4px;
-              ">
-            Contrary to popular belief, Lorem Ipsum
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0;
-              ">
-            What is Lorem Ipsum?
-          </td>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                color: #fb91ff;
-                padding-left: 4px;
-              ">
-            Lorem Ipsum is simply dummy text of
-          </td>
-        </tr>
-      </table>
-
-      <!--content table for mobile version only -->
-      <table style="width: 100%" class="mobile-only">
-        <tr>
-          <td style="
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0px;
-              ">
-            What is Lorem Ipsum?
-          </td>
-
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                color: #fb91ff;
-              ">
-            Lorem Ipsum is simply
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0px;
-              ">
-            Why do we use it?
-          </td>
-
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                color: #fb91ff;
-              ">
-            It is a long established
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0px;
-              ">
-            Where does it come from?
-          </td>
-
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                color: #fb91ff;
-              ">
-            Contrary to popular belief
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0px;
-              ">
-            Where can I get some?
-          </td>
-
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                color: #fb91ff;
-              ">
-            There are many variations
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0px;
-              ">
-            1914 translation by H. Rackham
-          </td>
-
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                color: #fb91ff;
-              ">
-            Lorem Ipsum is simply dummy
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0px;
-              ">
-            Section 1.10.33 of
-          </td>
-
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                color: #fb91ff;
-              ">
-            Contrary to popular belief
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0px;
-              ">
-            What is Lorem Ipsum?
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                font-weight: bold;
-                color: #fb91ff;
-              ">
-            Contrary to popular belief, Lorem Ipsum
-          </td>
-        </tr>
-        <tr>
-          <td style="
-                width: 50%;
-                font-weight: bold;
-                vertical-align: top;
-                padding: 4px 0px;
-              ">
-            What is Lorem Ipsum?
-          </td>
-        </tr>
-        <tr>
-          <td style="
-          font-weight: bold;
-          color: #fb91ff;
-        ">
-            Lorem Ipsum is simply dummy text of
-          </td>
-        </tr>
-      </table>
-
-      <p style="font-weight: bold">
-        Lorem Ipsum <br>
-        is simply dummy text of the printing and typesetting industry. Lorem
-        Ipsum has been the industry's standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it
-        <a href="https://example.com/" target="_blank" style="color: #7fc7f4">
-          when an unknown printer took a galley of type
-        </a>
-        specimen book. It has survived not only five centuries, but also the
-        leap into electronic typesetting, remaining essentially unchanged. It
-        was popularised in the 1960s with the release of Letraset sheets
-        containing Lorem Ipsum passages, and more recently with desktop
-        publishing software like Aldus PageMaker including versions of Lorem
-        Ipsum.
-      </p>
-    </div>
-
-    <!-- footer -->
-    <div style="background-color: #efefef; padding: 4px 16px; font-size: 14px">
-
-      <!-- social section for desktop version only -->
-      <div class="desktop-only">
-        <table style="width: 100%">
+    <!-- content row -->
+    <tr>
+      <td colspan="8" style="padding: 4px 16px;">
+        <table style="width: 100%;" class="desktop-only">
           <tr>
-            <td><img src="./assets/logo.png" width="150" alt="logo"></td>
+            <td style="
+                  font-weight: bold;
+                  vertical-align: top;
+                  padding: 4px 0;
+                " col>
+              What is Lorem Ipsum?
+            </td>
 
-            <td style="text-align: center; width: 30px">
-              <a href="https://www.facebook.com/" target="_blank">
-                <img src="./assets/facebook.png" width="24" alt="facebook logo">
-              </a>
+            <td style="
+                  font-weight: bold;
+                  color: #fb91ff;
+                  padding-left: 4px;
+                ">
+              Lorem Ipsum is simply
             </td>
-            <td style="text-align: center; width: 30px">
-              <a href="https://twitter.com/" target="_blank">
-                <img src="./assets/twitter.png" width="24" alt="twitter logo">
-              </a>
+          </tr>
+          <tr>
+            <td style="
+                  font-weight: bold;
+                  vertical-align: top;
+                  padding: 4px 0;
+                ">
+              Why do we use it?
             </td>
-            <td style="text-align: center; width: 30px">
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="./assets/instagram.png" width="24" alt="instagram logo">
-              </a>
+            <td style="
+                  font-weight: bold;
+                  color: #fb91ff;
+                  padding-left: 4px;
+                ">
+              It is a long established
             </td>
-            <td style="text-align: center; width: 30px">
-              <a href="https://www.youtube.com/" target="_blank">
-                <img src="./assets/youtube.png" width="24" alt="youtube logo">
-              </a>
+          </tr>
+          <tr>
+            <td style="
+                  font-weight: bold;
+                  vertical-align: top;
+                  padding: 4px 0;
+                ">
+              Where does it come from?
+            </td>
+            <td style="
+                  font-weight: bold;
+                  color: #fb91ff;
+                  padding-left: 4px;
+                ">
+              Contrary to popular belief
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  font-weight: bold;
+                  vertical-align: top;
+                  padding: 4px 0;
+                ">
+              Where can I get some?
+            </td>
+            <td style="
+                  font-weight: bold;
+                  color: #fb91ff;
+                  padding-left: 4px;
+                ">
+              There are many variations
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  font-weight: bold;
+                  vertical-align: top;
+                  padding: 4px 0;
+                ">
+              1914 translation by H. Rackham
+            </td>
+            <td style="
+                  font-weight: bold;
+                  color: #fb91ff;
+                  padding-left: 4px;
+                ">
+              Lorem Ipsum is simply dummy
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  font-weight: bold;
+                  vertical-align: top;
+                  padding: 4px 0;
+                ">
+              Section 1.10.33 of
+            </td>
+            <td style="
+                  font-weight: bold;
+                  color: #fb91ff;
+                  padding-left: 4px;
+                ">
+              Contrary to popular belief
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  font-weight: bold;
+                  vertical-align: top;
+                  padding: 4px 0;
+                ">
+              What is Lorem Ipsum?
+            </td>
+            <td style="
+                  font-weight: bold;
+                  color: #fb91ff;
+                  padding-left: 4px;
+                ">
+              Contrary to popular belief, Lorem Ipsum
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  font-weight: bold;
+                  vertical-align: top;
+                  padding: 4px 0;
+                ">
+              What is Lorem Ipsum?
+            </td>
+            <td style="
+                  font-weight: bold;
+                  color: #fb91ff;
+                  padding-left: 4px;
+                ">
+              Lorem Ipsum is simply dummy text of
             </td>
           </tr>
         </table>
-      </div>
+      </td>
+    </tr>
 
-      <!-- social section for mobile version only -->
-      <div class="mobile-only">
-        <table style="width: 100%">
+    <!-- content row -->
+    <tr>
+      <td style="font-weight: bold;padding: 4px 16px" colspan="8">
+        <p>
+          Lorem Ipsum <br>
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          <a href="https://example.com/" target="_blank" style="color: #7fc7f4">
+            when an unknown printer took a galley of type
+          </a>
+          specimen book. It has survived not only five centuries, but also the
+          leap into electronic typesetting, remaining essentially unchanged. It
+          was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </p>
+      </td>
+    </tr>
+    <!-- footer row -->
+    <tr>
+      <td colspan="8" style="padding:4px 16px;background-color: #efefef;">
+        <table>
           <tr>
-            <td colspan="8" style="text-align: center"><img src=" ./assets/logo.png" width="150" alt="logo"></td>
+            <td colspan="6">
+              <img src="https://i.postimg.cc/yxWHWVYt/logo.png" width="150" alt="logo">
+            </td>
+
+            <td style="text-align: right;" colspan="2">
+              <a href="https://www.facebook.com/" target="_blank" style="display:inline-block;">
+                <img src="https://i.postimg.cc/C1c0FZYb/facebook.png" width="24" alt="facebook logo">
+              </a>
+              &nbsp;
+              <a href="https://twitter.com/" target="_blank" style="display:inline-block;">
+                <img src="https://i.postimg.cc/rsbLrvDm/twitter.png" width="24" alt="twitter logo">
+              </a>
+              &nbsp;
+              <a href="https://www.instagram.com/" target="_blank" style="display:inline-block;">
+                <img src="https://i.postimg.cc/zXbNrXQR/instagram.png" width="24" alt="instagram logo">
+              </a>
+              &nbsp;
+              <a href="https://www.youtube.com/" target="_blank" style="display:inline-block;">
+                <img src="https://i.postimg.cc/xjFQhb62/youtube.png" width="24" alt="youtube logo">
+              </a>
+            </td>
           </tr>
 
           <tr>
-            <td colspan="2"></td>
-            <td style="width: 30px;">
-              <a href=" https://www.facebook.com/" target="_blank">
-                <img src="./assets/facebook.png" width="24" alt="facebook logo">
-              </a>
+            <td colspan="8">
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                has roots in a piece of classical Latin literature from 45 BC, making
+                it over 2000 years old. Richard McClintock, a Latin professor at
+                Hampden-Sydney College in Virginia, looked up one of the more obscure
+                Latin words, consectetur, from a Lorem Ipsum passage
+              </p>
+              <h3 style="margin-bottom: 0; color: #7fc7f4">Where can I get some</h3>
+              <p>
+                There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form, by injected
+                humour, or randomised words which don't look even slightly believable.
+              </p>
+
+              <p>
+                The standard chunk of <br>
+                Lorem Ipsum used since the 1500s
+              </p>
+
             </td>
-            <td style="text-align: center; width: 30px">
-              <a href="https://twitter.com/" target="_blank">
-                <img src="./assets/twitter.png" width="24" alt="twitter logo">
-              </a>
-            </td>
-            <td style="text-align: center; width: 30px">
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="./assets/instagram.png" width="24" alt="instagram logo">
-              </a>
-            </td>
-            <td style="text-align: center; width: 30px">
-              <a href="https://www.youtube.com/" target="_blank">
-                <img src="./assets/youtube.png" width="24" alt="youtube logo">
-              </a>
-            </td>
-            <td colspan="2"></td>
           </tr>
+
         </table>
-      </div>
-      <p>
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making
-        it over 2000 years old. Richard McClintock, a Latin professor at
-        Hampden-Sydney College in Virginia, looked up one of the more obscure
-        Latin words, consectetur, from a Lorem Ipsum passage
-      </p>
-
-      <h3 style="margin-bottom: 0; color: #7fc7f4">Where can I get some</h3>
-
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but
-        the majority have suffered alteration in some form, by injected
-        humour, or randomised words which don't look even slightly believable.
-      </p>
-
-      <p>
-        The standard chunk of <br>
-        Lorem Ipsum used since the 1500s
-      </p>
-    </div>
-  </div>
-
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
